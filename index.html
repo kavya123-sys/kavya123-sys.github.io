@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kavya Mehta | Portfolio</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:'Segoe UI',sans-serif;
 scroll-behavior:smooth;
 }
 
@@ -39,13 +41,14 @@ color:#38bdf8;
 
 nav ul{
 display:flex;
-list-style:none;
 gap:20px;
+list-style:none;
 }
 
 nav ul li a{
 color:white;
 text-decoration:none;
+transition:.3s;
 }
 
 nav ul li a:hover{
@@ -53,22 +56,20 @@ color:#38bdf8;
 }
 
 .hero{
-padding-top:120px;
 min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
 gap:50px;
+padding:120px 10% 50px;
 flex-wrap:wrap;
-padding-left:10%;
-padding-right:10%;
 }
 
 .hero img{
 width:280px;
 height:280px;
-border-radius:50%;
 object-fit:cover;
+border-radius:50%;
 border:5px solid #38bdf8;
 }
 
@@ -77,16 +78,20 @@ max-width:600px;
 }
 
 .hero-text h1{
-font-size:50px;
-margin-bottom:10px;
+font-size:55px;
 }
 
 .hero-text span{
 color:#38bdf8;
 }
 
+.hero-text h3{
+margin-top:10px;
+font-size:25px;
+}
+
 .hero-text p{
-margin-top:15px;
+margin-top:20px;
 line-height:1.8;
 color:#d1d5db;
 }
@@ -100,6 +105,11 @@ color:black;
 text-decoration:none;
 border-radius:30px;
 font-weight:bold;
+margin-right:10px;
+}
+
+.btn:hover{
+transform:scale(1.05);
 }
 
 section{
@@ -121,15 +131,20 @@ border-radius:15px;
 
 .skills{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
 gap:20px;
 }
 
 .skill{
 background:#1e293b;
 padding:20px;
-text-align:center;
 border-radius:10px;
+text-align:center;
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-8px);
 }
 
 .projects{
@@ -142,6 +157,11 @@ gap:20px;
 background:#1e293b;
 padding:20px;
 border-radius:10px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
 }
 
 .socials{
@@ -154,15 +174,19 @@ margin-top:20px;
 
 .socials a{
 text-decoration:none;
-color:white;
 background:#1e293b;
 padding:12px 20px;
 border-radius:30px;
+color:white;
 }
 
 .socials a:hover{
 background:#38bdf8;
 color:black;
+}
+
+.contact p{
+margin:10px 0;
 }
 
 footer{
@@ -174,50 +198,61 @@ margin-top:40px;
 
 @media(max-width:768px){
 
+nav ul{
+display:none;
+}
+
 .hero{
 text-align:center;
 }
 
 .hero-text h1{
-font-size:35px;
-}
-
-nav ul{
-display:none;
+font-size:40px;
 }
 
 }
+
 </style>
 </head>
+
 <body>
 
 <nav>
+
 <div class="logo">Kavya Mehta</div>
 
 <ul>
 <li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
 <li><a href="#skills">Skills</a></li>
 <li><a href="#projects">Projects</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
 <section class="hero">
 
-<img src="kavya.jpg" alt="Kavya Mehta">
+<img src="kavya.jpg" alt="Kavya">
 
 <div class="hero-text">
+
 <h1>Hi, I'm <span>Kavya Mehta</span></h1>
 
 <h3>Diploma ICT Student</h3>
 
 <p>
-I am Kavya Mehta from Ahmedabad, currently pursuing a Diploma in Information and Communication Technology (ICT) at Government Polytechnic for Girls. I am passionate about coding, web development, GitHub projects, content creation, and creative editing.
+Passionate Diploma ICT student from Ahmedabad with strong interest in Web Development, Programming, GitHub Projects, Creative Editing and Technology. Currently studying at Government Polytechnic for Girls and continuously learning modern development skills.
 </p>
 
 <a href="#contact" class="btn">Contact Me</a>
 
+<a href="resume.pdf" class="btn" download>
+Download Resume
+</a>
+
 </div>
+
 </section>
 
 <section id="about">
@@ -225,29 +260,42 @@ I am Kavya Mehta from Ahmedabad, currently pursuing a Diploma in Information and
 <h2 class="title">About Me</h2>
 
 <div class="card">
+
 <p>
-Hello! I'm Kavya Mehta from Ahmedabad, Gujarat. I am currently studying Diploma ICT at Government Polytechnic for Girls. I enjoy coding, creating websites, exploring GitHub, learning new technologies, video editing, and sharing content online. My goal is to become a skilled software and web developer.
+Hello! I am Kavya Mehta from Ahmedabad, Gujarat. I enjoy creating websites, learning programming languages, exploring GitHub, video editing and content creation. My goal is to become a successful Software and Web Developer.
 </p>
 
 <div class="socials">
 
-<a href="https://www.youtube.com/@Kavyamehta-k11" target="_blank">
-YouTube
-</a>
-
 <a href="https://github.com/kavya123-sys" target="_blank">
 GitHub
+</a>
+
+<a href="https://www.youtube.com/@Kavyamehta-k11" target="_blank">
+YouTube
 </a>
 
 <a href="#">
 LinkedIn
 </a>
 
-<a href="mailto:your-email@example.com">
-Email
-</a>
+</div>
 
 </div>
+
+</section>
+
+<section id="education">
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+
+<h3>Government Polytechnic for Girls</h3>
+
+<p>Diploma in Information & Communication Technology (ICT)</p>
+
+<p>Ahmedabad, Gujarat</p>
 
 </div>
 
@@ -280,17 +328,23 @@ Email
 
 <div class="project">
 <h3>Portfolio Website</h3>
-<p>Personal responsive portfolio website developed using HTML and CSS.</p>
+<p>
+Responsive personal portfolio website developed using HTML and CSS.
+</p>
 </div>
 
 <div class="project">
 <h3>GitHub Projects</h3>
-<p>Various learning projects uploaded on GitHub.</p>
+<p>
+Learning projects and coding practice uploaded on GitHub.
+</p>
 </div>
 
 <div class="project">
-<h3>College Projects</h3>
-<p>Projects created during Diploma ICT studies.</p>
+<h3>Academic Projects</h3>
+<p>
+Projects developed during Diploma ICT studies.
+</p>
 </div>
 
 </div>
@@ -299,40 +353,41 @@ Email
 
 <section id="contact">
 
-<h2 class="title">Contact</h2>
+<h2 class="title">Contact Me</h2>
 
-<div class="card">
+<div class="card contact">
 
 <p><strong>Name:</strong> Kavya Mehta</p>
+
 <p><strong>Location:</strong> Ahmedabad, Gujarat</p>
-<p><strong>Education:</strong> Diploma ICT</p>
+
 <p><strong>Institute:</strong> Government Polytechnic for Girls</p>
 
-<br>
-
 <p>
-YouTube:
-<a href="https://www.youtube.com/@Kavyamehta-k11" target="_blank">
-@Kavyamehta-k11
-</a>
-</p>
-
-<p>
-GitHub:
+<strong>GitHub:</strong>
 <a href="https://github.com/kavya123-sys" target="_blank">
 github.com/kavya123-sys
 </a>
 </p>
 
 <p>
-LinkedIn:
-<a href="#">Add Your LinkedIn Link</a>
+<strong>YouTube:</strong>
+<a href="https://www.youtube.com/@Kavyamehta-k11" target="_blank">
+@Kavyamehta-k11
+</a>
 </p>
 
 <p>
-Email:
-<a href="mailto:your-email@example.com">
-your-email@example.com
+<strong>LinkedIn:</strong>
+<a href="#">
+Add Your LinkedIn Link
+</a>
+</p>
+
+<p>
+<strong>Email:</strong>
+<a href="mailto:your-email@gmail.com">
+your-email@gmail.com
 </a>
 </p>
 
@@ -341,7 +396,11 @@ your-email@example.com
 </section>
 
 <footer>
-© 2026 Kavya Mehta | Portfolio Website
+
+<p>© 2026 Kavya Mehta</p>
+
+<p>Built with HTML, CSS & GitHub Pages</p>
+
 </footer>
 
 </body>
